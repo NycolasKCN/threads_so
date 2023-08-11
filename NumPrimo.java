@@ -14,6 +14,12 @@ public class NumPrimo implements Runnable {
 		} else {
 			System.out.println("O número " + num + " não é primo");
 		}
+
+		try {
+			Thread.sleep(1000);
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
 	}
 	
 	private boolean ehPrimo(int num) {
